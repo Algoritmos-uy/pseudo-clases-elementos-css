@@ -32,7 +32,7 @@ body {
 }
 
 .button:active {
-    background-color: #004080;
+    background-color: #f92617;
 }
 
 input:focus {
@@ -53,11 +53,13 @@ li:nth-child(odd) {
 li:nth-child(even) {
     background-color: #555555;
     color: white;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 /* Pseudo-elementos */
 h1::after {
-    content: " ★";
+    content: " \2605 "; /*aca usamos escape unicode para emoji estrella*/
     color: #ffc107;
 }
 
@@ -71,7 +73,7 @@ p::first-line {
 }
 
 a::before {
-    content: "🔗 ";
+    content: "\1F517"; /*aca usamos escape unicode para emoji de enlace*/
 }
 
 ::selection {
